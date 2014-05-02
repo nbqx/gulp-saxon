@@ -1,12 +1,18 @@
 {
   "name": "gulp-saxon",
   "description": "xslt by saxon plugin for gulp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "nbqx",
   "repository": {
     "type": "git",
     "url": "git://github.com/nbqx/gulp-saxon.git"
   },
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "saxon",
+    "xslt"
+  ],
   "homepage": "https://github.com/nbqx/gulp-saxon",
   "main": "index.js",
   "scripts": {

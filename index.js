@@ -10,6 +10,17 @@ module.exports = function(opts){
 
   function transform(file,e,next){
     var self = this;
+
+    if(file.isNull()){
+      self.push(file);
+      return next();
+    }
+
+    if(file.isStream()){
+      self.emit('error',new PluginError('gulp-saxon','stream not supported'));
+      return next();
+    }
+
     var xslt = saxon(opts.jarPath,opts.xslPath,{timeout:opts.timeout});
     var path = file.path;
     fs.createReadStream(path).pipe(xslt)
