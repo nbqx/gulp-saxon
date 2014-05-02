@@ -1,0 +1,25 @@
+{
+  "name": "gulp-saxon",
+  "description": "xslt by saxon plugin for gulp",
+  "version": "0.0.1",
+  "author": "nbqx",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nbqx/gulp-saxon.git"
+  },
+  "homepage": "https://github.com/nbqx/gulp-saxon",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.6.0",
+    "gulp-util": "^2.2.14",
+    "saxon-stream2": "0.0.1",
+    "through2": "^0.4.1"
+  },
+  "devDependencies": {
+    "tap": "^0.4.8"
+  }
+}
